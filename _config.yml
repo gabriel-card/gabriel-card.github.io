@@ -1,18 +1,18 @@
 # Site settings
-title: Jekyll-Uno
-description: 'Jekyll-Uno - a minimal, responsive theme for Jekyll'
-url: 'http://joshgerdes.com/jekyll-uno'
+title: Gabriel Cardoso
+description: 'Software Development Student'
+url: 'http://gabriel-card.github.io/''
 baseurl: '/'
 # google_analytics: 'UA-XXXXXX-X'
 # disqus_shortname: 'your-disqus-name'
 
 author:
-  name: 'Josh Gerdes'
-  email: josh@joshgerdes.com
-  twitter_username: joshgerdes
-  facebook_username: joshgerdes
-  github_username:  joshgerdes
-  linkedin_username:  joshgerdes
+  name: 'Gabriel Cardoso'
+  email: gbl.oxen@hotmail.com
+  twitter_username: none
+  facebook_username: gabrielcardosant
+  github_username:  gabriel-card
+  linkedin_username:  gabriel-cardoso
 
 defaults:
   -
