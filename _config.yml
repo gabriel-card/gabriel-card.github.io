@@ -1,7 +1,7 @@
 # Site settings
 title: Gabriel Cardoso
 description: 'Software Development Student'
-url: 'http://gabriel-card.github.io/''
+url: 'http://gabriel-card.github.io/'
 baseurl: '/'
 # google_analytics: 'UA-XXXXXX-X'
 # disqus_shortname: 'your-disqus-name'
