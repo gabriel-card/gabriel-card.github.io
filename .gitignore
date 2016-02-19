@@ -1,6 +1,9 @@
 _site
 .sass-cache
 .jekyll-metadata
+<<<<<<< HEAD
 *.sublime-project
 *.sublime-workspace
 .DS_Store
+=======
+>>>>>>> 91b2ec4d95c454ecb5549848f8a54e4ff99446c2
