@@ -9,10 +9,10 @@ baseurl: '/'
 author:
   name: 'Gabriel Cardoso'
   email: gbl.oxen@hotmail.com
-  twitter_username: none
+  twitter_username: #
   facebook_username: gabrielcardosant
   github_username:  gabriel-card
-  linkedin_username:  gabriel-cardoso
+  linkedin_username:  gabrielcard
 
 defaults:
   -
