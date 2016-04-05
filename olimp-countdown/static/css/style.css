@@ -42,6 +42,10 @@ body {
     color: #337ab7;
 }
 
+.masthead .masthead-brand {
+    color: #3ea909;
+}
+
 .masthead-nav > li > a {
     color: inherit;
 }
