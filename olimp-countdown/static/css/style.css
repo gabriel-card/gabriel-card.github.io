@@ -31,6 +31,7 @@ body {
 .cover tr td {
     border-left: 1px solid #ccc;
     color: #004b88;
+    width: 25%;
 }
 
 .cover tr td:first-child {
