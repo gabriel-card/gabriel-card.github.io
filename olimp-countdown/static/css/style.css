@@ -19,7 +19,7 @@ body {
 }
 
 .cover tr {
-    font-size: 5em;
+    font-size: 5.5em;
     color: rgba(0, 75, 136, 0.5);
 }
 
@@ -29,7 +29,6 @@ body {
 }
 
 .cover tr td {
-    padding: 0 0.3em;
     border-left: 1px solid #ccc;
     color: #004b88;
 }
@@ -38,22 +37,14 @@ body {
     border-left: none;
 }
 
-.masthead {
-    color: #337ab7;
-}
-
-.masthead .masthead-brand {
-    color: #3ea909;
-}
-
-.masthead-nav > li > a {
-    color: inherit;
-}
-.masthead-nav > .active > a, .masthead-nav > .active > a:hover, .masthead-nav > .active > a:focus {
-    color: #b2c9db;
-}
 
 #logo-rio {
     width: 50%;
     margin-bottom: 3.5em;
+}
+
+@media (min-width: 768px) {
+    .masthead, .mastfoot, .cover-container {
+        width: 80%;
+    }
 }
