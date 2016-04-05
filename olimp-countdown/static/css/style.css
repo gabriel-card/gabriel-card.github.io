@@ -1,0 +1,55 @@
+body {
+    background-color: #fff;
+    text-shadow: none;
+    color: #777;
+}
+
+.site-wrapper {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.table-responsive {
+    border: none;
+}
+
+.table>tbody>tr>td {
+    border-top: none;
+}
+
+.cover tr {
+    font-size: 5em;
+    color: rgba(0, 75, 136, 0.5);
+}
+
+.cover tr:first-child {
+    font-size: 2em;
+    font-weight: lighter;
+}
+
+.cover tr td {
+    padding: 0 0.3em;
+    border-left: 1px solid #ccc;
+    color: #004b88;
+}
+
+.cover tr td:first-child {
+    border-left: none;
+}
+
+.masthead {
+    color: #337ab7;
+}
+
+.masthead-nav > li > a {
+    color: inherit;
+}
+.masthead-nav > .active > a, .masthead-nav > .active > a:hover, .masthead-nav > .active > a:focus {
+    color: #b2c9db;
+}
+
+#logo-rio {
+    width: 50%;
+    margin-bottom: 3.5em;
+}
