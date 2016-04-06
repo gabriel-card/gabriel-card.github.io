@@ -14,9 +14,26 @@ $(function(){
 
         time = ts.toHTML("td");
         time = time.replace(/\s/g, "");
-        $('#countdown').html(time);
+
+        if(checkMobileWidth()) {
+            renderMobile(ts);
+        }
+        else {
+            $('#countdown').html(time);
+        }
 
     }, countdown.DAYS|countdown.HOURS|countdown.MINUTES|countdown.SECONDS);
+
+    function renderMobile(ts){
+        diaHora = [];
+        minSec = [];
+
+        diaHora.push($(ts.toHTML('td'))[0], $(ts.toHTML('td'))[1]);
+        minSec.push($(ts.toHTML('td'))[2], $(ts.toHTML('td'))[3]);
+
+        $('#countdown-1').html(diaHora);
+        $('#countdown-2').html(minSec);
+    }
 
 });
 
@@ -25,4 +42,11 @@ function addZeros(time){
         return "0" + time;
     }
     return time;
+}
+
+function checkMobileWidth() {
+    if (window.innerWidth < 525) {
+        return true;
+    }
+    return false;
 }

@@ -17,7 +17,7 @@ body {
     vertical-align: inherit;
     border-bottom: none;
 }
-.table>tbody>tr>td, .table>tbody>tr>th {
+.table>tbody>tr>td, .table>tbody>tr>th, .table>thead>tr>th {
     border-top: none;
 }
 
@@ -48,6 +48,18 @@ body {
     margin-bottom: 3.5em;
 }
 
+.countdown-mob, .thead-mob {
+        display: none;
+    }
+
+    .countdown-dsk {
+        display: table-row;
+    }
+
+    .thead-dsk {
+        display: table-header-group;
+    }
+
 @media (max-width: 768px) {
     .site-wrapper-inner {
         vertical-align: middle;
@@ -55,17 +67,27 @@ body {
 }
 
 @media (max-width: 525px) {
+    .countdown-dsk, .thead-dsk {
+        display: none;
+    }
+
+    .countdown-mob {
+        display: table-row;
+    }
+
+    .thead-mob {
+        display: table-header-group;
+    }
+    
+    .thead-mob:nth-of-type(2) {
+        border-top: 1px solid #ccc;
+    }
     .cover tr td, .cover tr th {
-        display: inline-block;
         width: 50%;
     }
 
-    .cover tr th:nth-child(even), .cover tr td:nth-child(even) {
-    border-left: 1px solid #ccc;
-    }
-
     .cover tr th:nth-child(odd), .cover tr td:nth-child(odd) {
-    border-left: none;
+        border-left: none;
     }
 
 }
