@@ -23,12 +23,11 @@ body {
 
 .cover tr {
     font-size: 5.5em;
-    color: rgba(0, 75, 136, 0.5);
+    color: #004b88;
 }
 
 .cover tr td, .cover tr th {
     border-left: 1px solid #ccc;
-    color: #004b88;
     width: 25%;
 }
 
@@ -42,23 +41,30 @@ body {
     font-weight: lighter;
 }
 
+.countdown-mob, .thead-mob {
+        display: none;
+    }
+
+.countdown-dsk {
+        display: table-row;
+    }
+
+.thead-dsk {
+        display: table-header-group;
+    }
+
+.font-color-white {
+    color: #fff !important;
+}
+
+.body-color {
+    background-color: #004b88 !important;
+}
 
 #logo-rio {
     width: 50%;
     margin-bottom: 3.5em;
 }
-
-.countdown-mob, .thead-mob {
-        display: none;
-    }
-
-    .countdown-dsk {
-        display: table-row;
-    }
-
-    .thead-dsk {
-        display: table-header-group;
-    }
 
 @media (max-width: 768px) {
     .site-wrapper-inner {
