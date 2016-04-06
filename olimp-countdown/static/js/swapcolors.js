@@ -3,7 +3,7 @@ $(function(){
         swapColors();
     });
 
-    $(window).on('tap', function(){
+    $(window).on('touchstart', function(){
         swapColors();
     });
 
