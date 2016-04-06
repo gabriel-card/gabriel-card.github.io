@@ -13,8 +13,11 @@ body {
 .table-responsive {
     border: none;
 }
-
-.table>tbody>tr>td {
+.table>thead>tr>th {
+    vertical-align: inherit;
+    border-bottom: none;
+}
+.table>tbody>tr>td, .table>tbody>tr>th {
     border-top: none;
 }
 
@@ -23,19 +26,20 @@ body {
     color: rgba(0, 75, 136, 0.5);
 }
 
-.cover tr:first-child {
-    font-size: 2em;
-    font-weight: lighter;
-}
-
-.cover tr td {
+.cover tr td, .cover tr th {
     border-left: 1px solid #ccc;
     color: #004b88;
     width: 25%;
 }
 
-.cover tr td:first-child {
+.cover tr td:first-child, .cover tr th:first-child {
     border-left: none;
+}
+
+.cover tr th {
+    font-size: 0.3em;
+    text-align: center;
+    font-weight: lighter;
 }
 
 
@@ -44,8 +48,24 @@ body {
     margin-bottom: 3.5em;
 }
 
-@media (min-width: 768px) {
-    .masthead, .mastfoot, .cover-container {
-        width: 80%;
+@media (max-width: 768px) {
+    .site-wrapper-inner {
+        vertical-align: middle;
     }
+}
+
+@media (max-width: 525px) {
+    .cover tr td, .cover tr th {
+        display: inline-block;
+        width: 50%;
+    }
+
+    .cover tr th:nth-child(even), .cover tr td:nth-child(even) {
+    border-left: 1px solid #ccc;
+    }
+
+    .cover tr th:nth-child(odd), .cover tr td:nth-child(odd) {
+    border-left: none;
+    }
+
 }
