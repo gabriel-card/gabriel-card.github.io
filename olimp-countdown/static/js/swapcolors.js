@@ -1,8 +1,4 @@
 $(function(){
-    $(window).click(function(){
-        swapColors();
-    });
-
     $(window).on('touchstart', function(){
         swapColors();
     });
