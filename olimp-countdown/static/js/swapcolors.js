@@ -1,6 +1,5 @@
 $(function(){
     $(window).on('touchstart' && 'click', function(){
-        console.log('ae');
         swapColors();
     });
 

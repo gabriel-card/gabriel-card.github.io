@@ -1,3 +1,7 @@
+html {
+    background-color: #fff;
+}
+
 body {
     background-color: #fff;
     text-shadow: none;
@@ -7,7 +11,7 @@ body {
     -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    user-select: none;           
+    user-select: none;
 }
 
 .site-wrapper {
@@ -79,6 +83,10 @@ body {
 }
 
 @media (max-width: 525px) {
+    #logo-rio {
+        margin: 2.5em auto;
+    }
+
     .countdown-dsk, .thead-dsk {
         display: none;
     }
@@ -90,10 +98,12 @@ body {
     .thead-mob {
         display: table-header-group;
     }
-    
-    .thead-mob:nth-of-type(2) {
-        border-top: 1px solid #ccc;
+
+    .cover tr {
+        font-size: 4.0em;
+        color: #004b88;
     }
+
     .cover tr td, .cover tr th {
         width: 50%;
     }
@@ -102,4 +112,10 @@ body {
         border-left: none;
     }
 
+    .table>thead>tr>th {
+        padding: 10px 0 0 0;
+    }
+    .table>tbody>tr>td {
+        padding: 0 0 10px 0;
+    }
 }
