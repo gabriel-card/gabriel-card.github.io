@@ -7,7 +7,6 @@ $(function(){
     'agora');
 
     var timerId = countdown(new Date(2016, 7, 5), function(ts) {
-        //ts.months = addZeros(ts.months); /* uncomment if using months */
         ts.hours = addZeros(ts.hours);
         ts.minutes = addZeros(ts.minutes);
         ts.seconds = addZeros(ts.seconds);
@@ -23,17 +22,6 @@ $(function(){
         }
 
     }, countdown.DAYS|countdown.HOURS|countdown.MINUTES|countdown.SECONDS);
-
-    // function renderMobile(ts) {
-    //     diaHora = [];
-    //     minSec = [];
-
-    //     diaHora.push($(ts.toHTML('td'))[0], $(ts.toHTML('td'))[1]);
-    //     minSec.push($(ts.toHTML('td'))[2], $(ts.toHTML('td'))[3]);
-
-    //     $('#countdown-1').html(diaHora);
-    //     $('#countdown-2').html(minSec);
-    // }
 
     function renderMobile(ts) {
         dia = $(ts.toHTML('td'))[0];
