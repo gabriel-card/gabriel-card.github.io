@@ -7,6 +7,7 @@ $(function() {
     'agora');
 
     var timerId = countdown(new Date(2016, 7, 5), function(ts) {
+        ts.days = ts.days.toString();
         ts.hours = addZeros(ts.hours);
         ts.minutes = addZeros(ts.minutes);
         ts.seconds = addZeros(ts.seconds);
