@@ -1,4 +1,4 @@
-$(function(){
+$(function() {
     countdown.setLabels(
     ' | | | | | | | | | | ',
     ' | | | | | | | | | | ',
@@ -14,7 +14,7 @@ $(function(){
         time = ts.toHTML("td");
         time = time.replace(/\s/g, "");
 
-        if(checkMobileWidth()) {
+        if (checkMobileWidth()) {
             renderMobile(ts);
         }
         else {
@@ -37,7 +37,7 @@ $(function(){
 
 });
 
-function addZeros(time){
+function addZeros(time) {
     if (time < 10) {
         return "0" + time;
     }
