@@ -1,4 +1,4 @@
-$(function(){
+$(function() {
     countdown.setLabels(
     ' | | | | | | | | | | ',
     ' | | | | | | | | | | ',
@@ -6,8 +6,11 @@ $(function(){
     '',
     'agora');
 
-    var timerId = countdown(new Date(2016, 7, 5), function(ts) {
-        //ts.months = addZeros(ts.months); /* uncomment if using months */
+    isOpeningCeremony = window.location.hash.indexOf('opening') !== -1;
+    theDate = new Date(2016, 7, 5, isOpeningCeremony ? 20 : 0, 0, 0);
+
+    var timerId = countdown(theDate, function(ts) {
+        ts.days = ts.days.toString();
         ts.hours = addZeros(ts.hours);
         ts.minutes = addZeros(ts.minutes);
         ts.seconds = addZeros(ts.seconds);
@@ -15,7 +18,7 @@ $(function(){
         time = ts.toHTML("td");
         time = time.replace(/\s/g, "");
 
-        if(checkMobileWidth()) {
+        if (checkMobileWidth()) {
             renderMobile(ts);
         }
         else {
@@ -23,17 +26,6 @@ $(function(){
         }
 
     }, countdown.DAYS|countdown.HOURS|countdown.MINUTES|countdown.SECONDS);
-
-    // function renderMobile(ts) {
-    //     diaHora = [];
-    //     minSec = [];
-
-    //     diaHora.push($(ts.toHTML('td'))[0], $(ts.toHTML('td'))[1]);
-    //     minSec.push($(ts.toHTML('td'))[2], $(ts.toHTML('td'))[3]);
-
-    //     $('#countdown-1').html(diaHora);
-    //     $('#countdown-2').html(minSec);
-    // }
 
     function renderMobile(ts) {
         dia = $(ts.toHTML('td'))[0];
@@ -49,7 +41,7 @@ $(function(){
 
 });
 
-function addZeros(time){
+function addZeros(time) {
     if (time < 10) {
         return "0" + time;
     }
