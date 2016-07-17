@@ -6,7 +6,10 @@ $(function() {
     '',
     'agora');
 
-    var timerId = countdown(new Date(2016, 7, 5), function(ts) {
+    isOpeningCeremony = window.location.hash.indexOf('opening') !== -1;
+    theDate = new Date(2016, 7, 5, isOpeningCeremony ? 20 : 0, 0, 0);
+
+    var timerId = countdown(theDate, function(ts) {
         ts.days = ts.days.toString();
         ts.hours = addZeros(ts.hours);
         ts.minutes = addZeros(ts.minutes);
